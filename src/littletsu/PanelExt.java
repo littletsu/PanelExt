@@ -84,6 +84,15 @@ public class PanelExt extends javax.swing.JLayeredPane {
         icon = i;
     }
     
+    public Icon getIcon() {
+        return icon;
+    }
+    
+    public ImageIcon getImageIcon() {
+        return imgIcon;
+    }
+    
+    
     @BeanProperty(bound=false, required=true, description="Scaling hints for icon rescaling.", enumerationValues={"java.awt.Image.SCALE_AREA_AVERAGING", "java.awt.Image.SCALE_DEFAULT", "java.awt.Image.SCALE_FAST", "java.awt.Image.SCALE_REPLICATE", "java.awt.Image.SCALE_SMOOTH"})
     public void setScalingHints(int newHints) {
         scalingHints = newHints;
